@@ -1417,6 +1417,7 @@ async def delete_secondary(guild, channel):
         if group_settings["group_channels"][category_id]["channels"][channel.id]:
             return
     except Exception:
+        print("fucking exception")
 
     if channel_is_requested(channel):
         return
